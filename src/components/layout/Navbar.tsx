@@ -17,7 +17,8 @@ const NAV_LINKS = [
 export function Navbar() {
   const status = useConnectionStatus();
   const latestBlock = useLatestBlock();
-  const { selectedAccount, setWalletModalOpen } = useBlockchainStore();
+  const selectedAccount = useBlockchainStore((s) => s.selectedAccount);
+  const setWalletModalOpen = useBlockchainStore((s) => s.setWalletModalOpen);
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const statusColor =

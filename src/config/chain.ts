@@ -60,7 +60,7 @@ export const TOKEN_SYMBOL = PORTALDOT_CONFIG.TOKEN.SYMBOL;
  */
 export function toHumanPOT(raw: bigint | string | number): string {
   const value = BigInt(raw.toString());
-  const divisor = BigInt(10 ** TOKEN_DECIMALS);
+  const divisor = BigInt(10) ** BigInt(TOKEN_DECIMALS);
   const whole = value / divisor;
   const fraction = value % divisor;
   const fractionStr = fraction.toString().padStart(TOKEN_DECIMALS, '0').slice(0, 4);
@@ -72,6 +72,7 @@ export function toHumanPOT(raw: bigint | string | number): string {
  */
 export function toPlanck(pot: number | string): bigint {
   const [whole, fraction = ''] = pot.toString().split('.');
+  const wholePart = whole === '' ? 0n : BigInt(whole);
   const fractionPadded = fraction.padEnd(TOKEN_DECIMALS, '0').slice(0, TOKEN_DECIMALS);
-  return BigInt(whole) * BigInt(10 ** TOKEN_DECIMALS) + BigInt(fractionPadded);
+  return wholePart * (BigInt(10) ** BigInt(TOKEN_DECIMALS)) + BigInt(fractionPadded);
 }

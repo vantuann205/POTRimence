@@ -6,7 +6,7 @@ import { getBlockInfo } from '@/lib/api/chain';
  * blockId can be a block number (integer) or hash (0x...)
  */
 export async function GET(
-  _req: NextRequest,
+  request: NextRequest,
   { params }: { params: { blockId: string } }
 ) {
   try {

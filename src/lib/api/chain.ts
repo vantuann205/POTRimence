@@ -52,6 +52,7 @@ export async function getChainStats(): Promise<ChainStats> {
     specVersion: api.runtimeVersion.specVersion.toNumber(),
     latestBlock: header.number.toNumber(),
     finalizedBlock: finalizedHeader.number.toNumber(),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     peers: (health as any).peers.toNumber(),
     timestamp: Date.now(),
   };
@@ -89,6 +90,7 @@ export async function getBlockInfo(blockHashOrNumber?: string | number): Promise
     stateRoot: header.stateRoot.toString(),
     extrinsicsRoot: header.extrinsicsRoot.toString(),
     extrinsicCount: extrinsics.length,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     timestamp: timestamp ? (timestamp as any).toNumber() : Date.now(),
   };
 }

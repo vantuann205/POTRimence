@@ -5,7 +5,7 @@ import { getStakingInfo } from '@/lib/api/staking';
  * GET /api/staking/info
  * Returns staking info (era, bonds, etc.)
  */
-export async function GET(_req: NextRequest) {
+export async function GET() {
   try {
     const info = await getStakingInfo();
     return NextResponse.json(info);

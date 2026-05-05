@@ -3,12 +3,14 @@ import { AccountPageClient } from './AccountPageClient';
 
 interface Props {
   params: { address: string };
+  searchParams: Record<string, string | string[] | undefined>;
 }
 
 export function generateMetadata({ params }: Props): Metadata {
+  const address = params?.address || 'Account';
   return {
-    title: `Account ${params.address.slice(0, 8)}… — POTRimence`,
-    description: `View balance, extrinsics and staking info for Portaldot account ${params.address}`,
+    title: `Account ${address.slice(0, 8)}… — POTRimence`,
+    description: `View balance, extrinsics and staking info for Portaldot account ${address}`,
   };
 }
 

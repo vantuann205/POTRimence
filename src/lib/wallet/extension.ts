@@ -47,8 +47,9 @@ export async function connectWallet(
 /**
  * Sign and submit an extrinsic using extension wallet
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function signAndSend(
-  extrinsic: Parameters<typeof import('@polkadot/api/types')['SubmittableExtrinsic']>[0],
+  extrinsic: any,
   senderAddress: string,
   statusCallback: (status: { type: string; hash?: string }) => void
 ): Promise<string> {

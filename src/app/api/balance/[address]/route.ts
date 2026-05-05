@@ -7,7 +7,7 @@ import { toHumanPOT } from '@/config/chain';
  * Returns POT balance for a given address
  */
 export async function GET(
-  _req: NextRequest,
+  request: NextRequest,
   { params }: { params: { address: string } }
 ) {
   try {

@@ -52,9 +52,10 @@ export async function getContractInfo(address: string): Promise<ContractInfo | n
 /**
  * Build a contract call extrinsic (for use with wallet signing)
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function buildContractCallExtrinsic(
   options: ContractCallOptions
-): Promise<SubmittableExtrinsic<'promise'>> {
+): Promise<any> {
   const api = await getPortaldotApi();
 
   const { ContractPromise } = await import('@polkadot/api-contract');
