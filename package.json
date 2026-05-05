@@ -1,0 +1,45 @@
+{
+  "name": "potrimence",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@polkadot/api": "^12.4.2",
+    "@polkadot/extension-dapp": "^0.46.9",
+    "@polkadot/util": "^13.1.1",
+    "@polkadot/util-crypto": "^13.1.1",
+    "@polkadot/keyring": "^13.1.1",
+    "@polkadot/types": "^12.4.2",
+    "@polkadot/rpc-provider": "^12.4.2",
+    "zustand": "^4.5.4",
+    "@tanstack/react-query": "^5.51.23",
+    "axios": "^1.7.3",
+    "lucide-react": "^0.426.0",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.12",
+    "recharts": "^2.12.7",
+    "framer-motion": "^11.3.31",
+    "react-hot-toast": "^2.4.1",
+    "next-themes": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.5",
+    "typescript": "^5.5.4",
+    "prettier": "^3.3.3",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0"
+  }
+}
