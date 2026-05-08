@@ -20,7 +20,7 @@ Portaldot is a Layer-0 public chain built on Substrate with 10,000+ TPS, ZKP pri
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 src/
