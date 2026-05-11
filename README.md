@@ -159,7 +159,7 @@ npm start
 
 ---
 
-## 🔑 Key Modules (Portaldot Substrate)
+## Key Modules (Portaldot Substrate)
 
 | Module | Description |
 |--------|-------------|
