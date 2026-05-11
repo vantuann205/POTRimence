@@ -186,6 +186,6 @@ npm start
 
 ---
 
-## 📄 License
+## License
 
 MIT © POTRimence Team
