@@ -102,7 +102,7 @@ src/
 
 ---
 
-## ⚙️ Chain Info
+## Chain Info
 
 | Key | Value |
 |-----|-------|
