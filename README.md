@@ -177,7 +177,7 @@ npm start
 
 ---
 
-## 📖 Resources
+## Resources
 
 - [Portaldot Developer Docs](https://portaldot-dev.readthedocs.io/en/latest)
 - [Chain Info](https://portaldot-dev.readthedocs.io/en/latest/chain-info.html)
