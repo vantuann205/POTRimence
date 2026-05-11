@@ -2,7 +2,7 @@
 
 import { useChainStats } from '@/hooks/useChain';
 import { useStakingInfo } from '@/hooks/useStaking';
-import { useTotalIssuance } from '@/hooks/useBalance';
+import { useTotalIssuance } from '@/hooks/useBalance'
 
 interface StatCardProps {
   label: string;
