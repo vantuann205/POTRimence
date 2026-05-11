@@ -146,7 +146,7 @@ npm start
 
 ---
 
-## 🔌 API Reference
+## API Reference
 
 ### REST Endpoints (Next.js API Routes)
 
